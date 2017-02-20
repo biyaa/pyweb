@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>智能识别</title>
+  <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <script type="text/javascript" src="jquery_min.js"></script>
+  <script type="text/javascript" src="jsinput.js"></script>
+
+
+</head>
+
+<body>
+  <div id="topbar"></a></div>
+  <div id="w">
+    <div id="content">
+    <h1><span>智能识别演示</span></h1>
+    
+    <form id="searchform" name="searchform" method="get" action="index.html">
+      <div class="fieldcontainer">
+        <input type="file" name="s" id="s" class="searchfield" placeholder="输入图片路径..." tabindex="1">
+        <input type="submit" name="searchbtn" id="searchbtn" value=""> 
+      </div><!-- @end .fieldcontainer -->
+    </form>
+    
+    <br><br>
+    <h1 id="showpic"><span id='pictitle'>图片显示</span>
+        <p id='pic_c'><img id='pic'></img></p> 
+    </h1>
+    <p></p>
+    <h1 id="showresult"><span>分析结果</span>
+    <p id='ai'></p>
+	</h1>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+</body>
+</html>
