@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+    web.demo
+    ~~~~~~~~
+    Created on 2017-02-20 16:54
+    @author : huangguoxiong
+    copyright: (c) 2017 by huangguoxiong.
+    license: Apache license, see LICENSE for more details.
+"""
+
 import numpy as np
 import time
 import random as rd
@@ -6,14 +16,6 @@ import os
 cmd_cur_id = rd.randint(9,999999)
 api = hug.get(on_invalid=hug.redirect.not_found)
 html = hug.get(output=hug.output_format.html)
-
-suffix_output = hug.output_format.suffix({
-    '.js': hug.output_format.text,
-    '.html':hug.output_format.html,
-    '.css':hug.output_format.file,
-    '.png':hug.output_format.png_image,
-    '.gif':hug.output_format.file
-    })
 
 
 def set_p(pid):
