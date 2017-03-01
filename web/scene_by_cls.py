@@ -3,11 +3,7 @@ import sys
 import os
 import time
 import numpy as np
-#import matplotlib.pyplot as plt
-#%matplotlib inline
-#plt.rcParams['figure.figsize'] = (10, 10)
-#plt.rcParams['image.interpolation'] = 'nearest'
-#plt.rcParams['image.cmap'] = 'gray'
+
 
 # Make sure that caffe is on the python path:
 web_path = os.getcwd()
@@ -24,7 +20,6 @@ caffe.set_mode_gpu()
 ####################################################
 model_def = '/home/zjw/cnn-models-master/VGG19_cvgj/deploy.prototxt'                                        
 model_weights = '/home/zjw/cnn-models-master/VGG19_cvgj/vgg19_cvgj_iter_1000.caffemodel'  #####################
-
 
 net = caffe.Net(model_def,      # defines the structure of the model
                 model_weights,  # contains the trained weights
